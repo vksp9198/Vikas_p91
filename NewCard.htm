@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="jsCard.css">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                color: #111;
+            }
+
+            body {
+                height: 100%;
+                width: 100%;
+                background-color: rgb(223, 100, 217);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .container {
+                height: 430px;
+                width: 300px;
+                border: 2px solid rgb(240, 232, 232);
+                border-radius: 12px;
+                margin-top: 200px;
+                padding: 0.8%;
+            }
+
+            .container img {
+                height: 68%;
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 12px;
+                border: 1px solid rgb(145, 227, 241);
+            }
+
+            .container h1 {
+                text-align: center;
+                font-family: Exotc350 Bd BT;
+                font-weight: 200;
+                margin-bottom: 8px;
+            }
+
+            #stranger {
+                display: inline;
+                font-weight: 1200;
+                background-color: rgb(227, 226, 230);
+                text-align: center;
+                padding: 4px 14px;
+                margin: 78px;
+                border-radius: 8px;
+
+            }
+
+            .btn {
+                text-align: center;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-top: 16px;
+            }
+
+            #remove,
+            #add {
+                height: 38px;
+                width: 98px;
+                padding: 8px;
+                border-radius: 8px;
+                font-weight: 600;
+                background-color: #dadada;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <img src="vpImg1.jpg" alt="Vks">
+            <h1>Vikas Prajapati</h1>
+            <h2 id="stranger">Stranger</h2>
+            <div class="btn">
+                <button id="remove">Remove</button>
+                <button id="add">Add Friend</button>
+            </div>
+        </div>
+        <script src="jsCard.js"></script>
+        <script>
+            let str = document.querySelector("#stranger");
+            let btn = document.querySelector("#add");
+
+            console.log(btn);
+            let btn1 = document.querySelector("#remove");
+            console.log(btn1);
+            console.log(str);
+            // str.innerText = "friends";
+            btn.addEventListener("click", function () {
+                console.log("add");
+                str.innerText = "friends";
+                str.style.color = "green";
+            });
+            btn1.addEventListener("click", function () {
+                console.log("remove");
+                str.innerText = "Stranger";
+                str.style.color = "red";
+
+            });
+
+        </script>
+    </body>
+
+</html>

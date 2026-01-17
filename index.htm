@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap demo</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    </head>
+
+    <body class="bg-black">
+        <!-- navbar created -->
+        <nav class="navbar bg-dark  navbar-expand-lg fixed-top" data-bs-theme=" dark">
+            <div class="container-fluid mx-auto">
+                <a class="navbar-brand text-white" href="#">Coding Bro</a>
+                <!-- <p class="text-white fs-6 font-monospace lh-sm text-wrap">Learn.Build.Grow with code. </p> -->
+                <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse mt-3" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-1 mb-lg-2 mx-auto ">
+                        <li class="nav-item ">
+                            <a class="nav-link active text-white mx-5" aria-current="page"
+                                href="#carouselExampleAutoplaying">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white mx-5" aria-current="page" href="#cards">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white mx-5" aria-current="page" href="#about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white mx-5" aria-current="page" href="#">Links</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white mx-5" aria-current="page" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+        <!-- section1  -->
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="computer.jpg" class="d-block w-100 mh-60 " alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="laptop2.jpg" class="d-block w-100 mh-60" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="laptop1.jpg" class="d-block w-100 mh-60" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Welcome to Coding Bro</h5>
+                <p>Your friendly destination for learning coding in a simple and practical
+                    way.We help beginners and students understand programming language easily and apply them in real
+                    project.
+                    whether you want to build websites , learn programming languages, or improve your coding skills,
+                    Coding Bro is here to guide your step by step.
+                <h6>Star your coding journey today and turn your ideas into reality.</h6>
+                </p>
+            </div>
+        </div>
+
+        <!-- section2 -->
+        <section class="cards" id="cards">
+            <h1 class="our-services text-white text-center my-2 py-3 ">Our Services </h4>
+            </h1>
+            <!-- card1 -->
+            <div class="container">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="robot.png" class="img-fluid rounded-start  h-100 object-fit-cover alt=" male">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Projct Guidance</h5>
+                                <p class="card-text">Mini and Major projects ideas <br>
+                                    College Project Supports <br>
+                                    Code Explanation and debugging</p>
+                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- card2 -->
+            <div class="container">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4 ">
+                            <img src="man.png" class="img-fluid rounded-start object-fit-cover" alt="male">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Learning Support</h5>
+                                <p class="card-text">Notes and tutorials <br>
+                                    Simple Explanation <br>
+                                    Step-by-step guidance</p>
+                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card3 -->
+            <div class="container">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="cyber-security-expert-working-with-technology-neon-lights.jpg"
+                                class="img-fluid rounded-start h-100 object-fit-cover" alt="male">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Programming Basics</h5>
+                                <p class="card-text">C, C++ and Python basics <br>
+                                    Logic building <br>
+                                    Problem solving skills</p>
+                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card4 -->
+
+            <div class="container">
+                <div class="card mb-3 border" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="computer3.jpg" class="img-fluid rounded-start  h-100 object-fit-cover "
+                                alt="male">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Web Development</h5>
+                                <p class="card-text">HTML , CSS and JavaScript <br>
+                                    Responsive website design <br>
+                                    beginner-friendly projects</p>
+                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about section  -->
+        <section id="about" class="text-white my-2 bg-black border">
+            <h1 class="text-center">About Us</h1>
+            <p class="text-center mx-2 p-1 fs-4">Coding bro is created with a mission to make coding easy , clear and
+                accessible for
+                everyone
+                . we belive that anyone can learn programming if it is explained in a simple and practical manner.</p>
+            <ul class="text-white my-6">Out focus is on :
+                <li>Easy Explanation</li>
+                <li>Real-world examples</li>
+                <li>Beginner-friendly learning</li>
+                <li>Skill-oriented coding </li>
+            </ul>
+
+
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+    </body>
+
+</html>
